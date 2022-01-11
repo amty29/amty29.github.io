@@ -4,12 +4,97 @@
     <meta charset="UTF-8">
     <title>Baking</title>
 </head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 2px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 <body style="background-color:black;">
-    <a href="/recipes">
+<h2>Baking Recipes</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/recipes">
         <img src="oatmeal.png" alt="Delicious Oatmeal" width="220" height="220">
     </a>
-    <a href="/recipes">
+    <div class="desc">Blueberry Protein Oatmeal</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/recipes">
         <img src="lb-pancakes.png" alt="Delicious Pancakes" width="175" height="220">
     </a>
+    <div class="desc">Lemon Blueberry Pancakes</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/recipes">
+      <img src="oatmealcookie" alt="Declicious Oatmeal Cookies" width="175" height="220">
+    </a>
+    <div class="desc">Hearty Oatmeal Cookie here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/recipes">
+        <img src="lemonbar.png" alt="Delicious Lemon Bars" width="175" height="220">
+    </a>
+    <div class="desc">Zesty Lemon Bar</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 </body>
 </html>
+
+
